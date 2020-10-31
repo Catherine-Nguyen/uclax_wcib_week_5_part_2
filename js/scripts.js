@@ -1,4 +1,5 @@
-console.log('Hello from js/scripts.js!');
+//document.querySelector('html').style.backgroundColor = 'red';
+
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
