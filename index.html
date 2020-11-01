@@ -18,30 +18,13 @@
 <body>
 
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Silly Game</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -53,8 +36,8 @@
   <main role="main" class="container">
 
     <div class="starter-template">
-      <h1>Bootstrap starter template</h1>
-      <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <h1>Silly Story Generator</h1>
+      <p class="lead">It's a silly story of the day</p>
     </div>
 
     <div>
@@ -62,8 +45,16 @@
       <input id="customname" type="text" placeholder="">
     </div>
     <div>
+      <label for="customweather">Enter custom weather:</label>
+      <input id="customweather" type="text" placeholder="">
+    </div>
+    <div>
       <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
       <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+    </div>
+    <div>
+      <label for="uk">Italy</label><input id="Italy" type="radio" name="ukus" value="Italy">
+      <label for="uk">France</label><input id="France" type="radio" name="ukus" value="France">
     </div>
     <div>
       <button class="randomize">Generate random story</button>
@@ -71,13 +62,18 @@
     <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
     <p class="story"></p>
 
+    <img  id="myImage" src="images/summervibe2.png">
 
+    <div class="button">
+         <button class="btn btn-warning" onclick=before();>Summer Vibe</button>
+         <button class="btn btn-success" onclick=afterr();>Winter Vibe</button>
+    </div>
   </main><!-- /.container -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
-  
+
 </body>
 
 </html>
